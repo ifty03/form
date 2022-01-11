@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5b16714e94.js" crossorigin="anonymous"></script>
+    <title>this is flex box</title>
+    <style>
+        .login-container{
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .login-form input {
+            margin-top: 10px;
+            font-size: 1.3em;
+            border-radius: 5px;
+            padding: 2px 0px 2px 10px;
+            border: 1px solid black;
+        }
+        .login-form input:focus{
+            color: orange;
+            
+        }
+        button{
+            margin-top: 10px;
+            font-size: 1.3em; 
+            font-weight: 600;
+            background-color: orange;
+            padding: 3px 0px;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: white;
+            border: 5px solid orange;
+            border-radius: 20px;
+        }
+        h1{
+            font-size: 30px;
+            color: orange;
+            margin-top: 50px;
+        }
+        nav a{
+            text-decoration: none;
+            font-size: 1.3em;
+            color: black;
+            margin-left: 40px;
+            border-radius: 5px;
+            
+            padding: 5px 15px;
+            
+
+        }
+        nav a:hover{
+            border: 5px solid orange;
+            padding: 1px 10px;
+            border-radius: 10px;
+            background-color: white;
+            
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .fas{
+            font-size:25px ;
+        }
+        .icon{
+            margin-right: 100px;
+        }
+        .icon i{
+            margin-left: 20px;
+        }
+        
+        
+
+    </style>
+
+</head>
+<body>
+
+
+<header>
+
+<div>
+    <nav>
+        <a href="">Home</a>
+        <a href="">Pursahe</a>
+        <a href="">Start</a>
+        <a href="">Contac us</a>
+        <a href="">Abut us</a>
+    </nav>
+</div>
+    <div class="icon">
+        <i class="fas fa-sign-in-alt"></i>
+        <i class="fas fa-user-circle"></i>
+    </div>
+</header>
+
+<section class="login-container">
+<form class="login-form" action="">
+    <h1>Login</h1>
+    <input placeholder="enter your name" type="text" required>
+    <input placeholder="enter your email" type="email" name="" id="" required>
+    <input placeholder="enter your password" type="password" name="" id="" required>
+    <button type="submit">Login</button>
+</form>
+</section>
+    
+</body>
+</html>
